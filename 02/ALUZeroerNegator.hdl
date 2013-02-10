@@ -1,0 +1,21 @@
+// File name: projects/02/ALUZeroerNegator.hdl
+
+/*
+ * Implements 1-bit logic to zero and negate the input.
+ */
+
+CHIP ALUZeroerNegator {
+    IN in, z, n;
+    OUT out;
+
+    PARTS:
+    Not(in=z, out=notz);
+    Not(in=in, out=notin);
+    Not(in=n, out=notn);
+    And(a=notin, b=n, out=c);
+    And(a=in, b=notn, out=d);
+    Or(a=c, b=d, out=e);
+    And(a=notz, b=e, out=f);
+    And(a=z, b=n, out=g);
+    Or(a=f, b=g, out=out);
+}

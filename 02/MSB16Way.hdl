@@ -1,0 +1,14 @@
+// File name: projects/02/MSB16Way.hdl
+
+
+/**
+ * MSB of the 16-bit input.
+ */
+
+CHIP MSB16Way {
+    IN in[16];
+    OUT out;
+
+    PARTS:
+    Or(a=in[15], b=false, out=out);
+}

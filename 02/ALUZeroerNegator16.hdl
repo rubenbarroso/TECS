@@ -1,0 +1,28 @@
+// File name: projects/02/ALUZeroerNegator16.hdl
+
+/*
+ * Implements 16-bit logic to zero and negate the input.
+ */
+
+CHIP ALUZeroerNegator16 {
+  IN in[16], z, n;
+  OUT out[16];
+
+  PARTS:
+  ALUZeroerNegator(in=in[0], z=z, n=n, out=out[0]);
+  ALUZeroerNegator(in=in[1], z=z, n=n, out=out[1]);
+  ALUZeroerNegator(in=in[2], z=z, n=n, out=out[2]);
+  ALUZeroerNegator(in=in[3], z=z, n=n, out=out[3]);
+  ALUZeroerNegator(in=in[4], z=z, n=n, out=out[4]);
+  ALUZeroerNegator(in=in[5], z=z, n=n, out=out[5]);
+  ALUZeroerNegator(in=in[6], z=z, n=n, out=out[6]);
+  ALUZeroerNegator(in=in[7], z=z, n=n, out=out[7]);
+  ALUZeroerNegator(in=in[8], z=z, n=n, out=out[8]);
+  ALUZeroerNegator(in=in[9], z=z, n=n, out=out[9]);
+  ALUZeroerNegator(in=in[10], z=z, n=n, out=out[10]);
+  ALUZeroerNegator(in=in[11], z=z, n=n, out=out[11]);
+  ALUZeroerNegator(in=in[12], z=z, n=n, out=out[12]);
+  ALUZeroerNegator(in=in[13], z=z, n=n, out=out[13]);
+  ALUZeroerNegator(in=in[14], z=z, n=n, out=out[14]);
+  ALUZeroerNegator(in=in[15], z=z, n=n, out=out[15]);
+}
